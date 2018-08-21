@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1534894178285' stop='1534894213502'>
+    <name>The web table can be edited and contents retained</name>
+    <title>The web table can be edited and contents retained</title>
+    <test-cases>
+        <test-case start='1534894178286' status='passed' stop='1534894201139'>
+            <name>--> Edit all table rows and verify table contents</name>
+            <title>--> Edit all table rows and verify table contents</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='839ee2f0-9e52-48ee-badb-aaa4f0ea70d2-attachment.png' type='image/png' size='46348'/>
+            </attachments>
+        </test-case>
+        <test-case start='1534894201140' status='failed' stop='1534894213501'>
+            <name>--> Refresh the page and ensure the new values are retained</name>
+            <title>--> Refresh the page and ensure the new values are retained</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5be24cdb-68ab-4c7f-b339-1a01bbbc56f2-attachment.png' type='image/png' size='40112'/>
+            </attachments>
+            <failure>
+                <message>Failed: No element found using locator: By(xpath, //tr[1]//td[contains(.,'Isentia_test_FirstName')])</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(xpath, //tr[1]//td[contains(.,'Isentia_test_FirstName')])
+                    at WebDriverError (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:27:5)
+                    at NoSuchElementError (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:168:5)
+                    at elementArrayFinder.getWebElements.then (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\lib\element.ts:851:17)
+                    at ManagedPromise.invokeCallback_ (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1366:14)
+                    at TaskQueue.execute_ (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2970:14)
+                    at TaskQueue.executeNext_ (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2953:27)
+                    at asyncRun (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2813:27)
+                    at C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:676:7
+                    at process._tickCallback (internal/process/next_tick.js:109:7)Error
+                    at ElementArrayFinder.applyAction_ (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\lib\element.ts:482:23)
+                    at ElementArrayFinder.(anonymous function) [as isDisplayed] (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\lib\element.ts:96:21)
+                    at ElementFinder.(anonymous function) [as isDisplayed] (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\lib\element.ts:873:14)
+                    at assert_new_values_in_web_table (C:\Users\amits\Isentia\protractor_web_table\pages\webTable_page.js:89:26)
+                    at C:\Users\amits\Isentia\protractor_web_table\pages\webTable_page.js:38:17
+                    at ManagedPromise.invokeCallback_ (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1366:14)
+                    at TaskQueue.execute_ (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2970:14)
+                    at TaskQueue.executeNext_ (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2953:27)
+                    at asyncRun (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2813:27)
+                    at C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:676:7
+                From: Task: Run it("--> Refresh the page and ensure the new values are retained") in control flow
+                    at UserContext.&lt;anonymous> (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+                    at attempt (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at QueueRunner.execute (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+                    at Spec.queueRunnerFactory (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+                    at Spec.execute (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+                    at UserContext.fn (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+                    at attempt (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at runNext (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (C:\Users\amits\Isentia\protractor_web_table\test_spec\test_spec.js:20:5)
+                    at addSpecsToSuite (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (C:\Users\amits\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (C:\Users\amits\Isentia\protractor_web_table\test_spec\test_spec.js:8:1)
+                    at Module._compile (module.js:570:32)
+                    at Object.Module._extensions..js (module.js:579:10)
+                    at Module.load (module.js:487:32)
+                    at tryModuleLoad (module.js:446:12)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

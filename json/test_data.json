@@ -1,0 +1,9 @@
+{
+    "firstname": "Isentia_test_FirstName",
+    "lastname": "Isentia_test_LastName",
+    "username": "Isentia_test_UserName",
+    "password": "pwd123",
+    "customer": "Company AAA",
+    "role": "Sales Team",
+    "email": "testing@isentia.com"
+}
