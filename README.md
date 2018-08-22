@@ -3,7 +3,7 @@ Testing a web table on an AngularJS web page. URL: http://www.way2automation.com
 
 To run the test:
 1. open a command window and run the command: 'webdriver-manager start' - this will start the webdriver manager.
-2. use another command window to navigate to the project root
+2. use another command window to navigate to the project root and run the command 'npm install'
 3. after all packages are updated and the node_modules dir is created, change directory to conf
 4. run the command 'protractor conf.js'
 5. the test run finishes in about 30 secs. on the Chrome browser.
